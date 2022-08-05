@@ -3,7 +3,7 @@ pdftoppm  $input ~/Documents/ocr/page
 
 for i in ~/Documents/ocr/*.ppm
 do
-	tesseract $i $i -l eng+jpn+jpn_vert
+	tesseract $i $i -l jpn
 done
 
 cat ~/Documents/ocr/*.ppm.txt>>$input.txt
