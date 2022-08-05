@@ -1,12 +1,12 @@
-input=`ls -ct ~/Documents/ocr/*.pdf|head -n 1`
-pdftoppm  $input ~/Documents/ocr/page 
+input=`ls -ct ~/Downloads/ocr/*.pdf|head -n 1`
+pdftoppm  $input ~/Downloads/ocr/page 
 
-for i in ~/Documents/ocr/*.ppm
+for i in ~/Downloads/ocr/*.ppm
 do
 	tesseract $i $i -l jpn
 done
 
-cat ~/Documents/ocr/*.ppm.txt>>$input.txt
-rm ~/Documents/ocr/*.ppm 
-rm ~/Documents/ocr/*.ppm.txt
+cat ~/Downloads/ocr/*.ppm.txt>>$input.txt
+rm ~/DDownloads/ocr/*.ppm 
+rm ~/Downloads/ocr/*.ppm.txt
 echo transform completed,your file is in $input.txt
