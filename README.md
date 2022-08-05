@@ -1,9 +1,9 @@
 # ocr tools for transfer pdf to txt
-$sh ocr-install.sh
-#for install and there will be a detectory in /Document named "ocr"
-#put your pdf file into "ocr"
-$sh ocr.sh
+$sh ~/Downloads/ocr/ocr-install.sh
+
+#put your pdf file into "Downloads/ocr"
+$sh ~/Downloads/ocr/ocr.sh
 #for japanese
-$sh ocr-kor.sh
+$sh ~/Downloads/ocr-kor.sh
 #for korean
-#output in  ~/Document/ocr as txt
+#output in  ~/Downloads/ocr as txt
